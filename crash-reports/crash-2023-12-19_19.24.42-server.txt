@@ -1,0 +1,61 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  PhosphorFMLLoadingPlugin (phosphor-1.12.2-0.2.6+build50.jar)
+Contact their authors BEFORE contacting forge
+
+// Uh... Did I do that?
+
+Time: 23/12/19 19:24
+Description: Exception in server tick loop
+
+java.lang.ClassCastException: com.gildedgames.orbis.lib.world.WorldObjectManager cannot be cast to com.gildedgames.orbis_api.world.WorldObjectManager
+	at com.gildedgames.orbis_api.world.WorldObjectManager.get(WorldObjectManager.java:80)
+	at com.gildedgames.orbis_api.world.WorldObjectManagerEvents.onWorldTick(WorldObjectManagerEvents.java:18)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler_201_WorldObjectManagerEvents_onWorldTick_WorldTickEvent.invoke(.dynamic)
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onPostWorldTick(FMLCommonHandler.java:274)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:776)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:397)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:668)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0-262, OpenLogic-OpenJDK
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 523697928 bytes (499 MB) / 979894272 bytes (934 MB) up to 979894272 bytes (934 MB)
+	JVM Flags: 2 total; -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.42 Powered by Forge 14.23.5.2860 11 mods loaded, 11 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID                | Version       | Source                                        | Signature                                |
+	|:------ |:----------------- |:------------- |:--------------------------------------------- |:---------------------------------------- |
+	| LCHIJA | minecraft         | 1.12.2        | minecraft.jar                                 | None                                     |
+	| LCHIJA | mcp               | 9.42          | minecraft.jar                                 | None                                     |
+	| LCHIJA | FML               | 8.0.99.99     | forge-1.12.2-14.23.5.2860.jar                 | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | forge             | 14.23.5.2860  | forge-1.12.2-14.23.5.2860.jar                 | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| LCHIJA | orbis-lib         | 0.2.0         | orbis-lib-1.12.2-0.2.0+build411.jar           | db341c083b1b8ce9160a769b569ef6737b3f4cdf |
+	| LCHIJA | aether            | 0.3.0         | aether_ii-1.12.2-0.3.0-build411-universal.jar | db341c083b1b8ce9160a769b569ef6737b3f4cdf |
+	| LCHIJA | baubles           | 1.5.2         | baubles-1.12-1.5.2.jar                        | None                                     |
+	| LCHIJA | orbis_api         | 1.12.2-1.1.11 | orbis_api-1.12.2-1.1.11.jar                   | db341c083b1b8ce9160a769b569ef6737b3f4cdf |
+	| LCHIJA | thaumcraft        | 6.1.BETA26    | Thaumcraft-1.12.2-6.1.BETA26.jar              | None                                     |
+	| LCHIJA | twilightforest    | 3.11.1021     | twilightforest_1.12.2_3.11.1021_universal.jar | None                                     |
+	| LCHIJA | phosphor-lighting | 1.12.2-0.2.6  | phosphor-1.12.2-0.2.6+build50.jar             | f0387d288626cc2d937daa504e74af570c52a2f1 |
+
+	Loaded coremods (and transformers): 
+PhosphorFMLLoadingPlugin (phosphor-1.12.2-0.2.6+build50.jar)
+  
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 10; []
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)

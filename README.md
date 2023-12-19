@@ -1,5 +1,7 @@
 # simple minecraft server
 #### MINECRAFT 1.12.2 SERVER REPO
+there also could be minecraft_server.1.12.2.jar, forge-1.12.2-14.23.5.2860.jar & world, mods, orbis, .mixin.out, libraries
+
 
 forge doesnt transfer mods from server to client.
 

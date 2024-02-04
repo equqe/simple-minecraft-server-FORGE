@@ -28,7 +28,7 @@ now you should create start.txt and insert there this command:
 
 and so, you save start.txt with this command and rename it to start.bat. you should launch the .bat and see that few files are added at the server directory. DONT close the console, it'll close by itself. inside the eula.txt file you change "eula=false" to "eula=true".
 
-if there are'nt new files added, you may've done those mistakes somehow:
+if there aren't new files added, you may've done those mistakes somehow:
 - installed wrong version of Java
 - used wrong path to OpenJDK
 - just copypasted "-jar forge-1.12.2-14.23.5.2855.jar" into start.bat, when your actual forge version(in the server folder) is newer
